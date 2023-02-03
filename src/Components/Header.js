@@ -1,9 +1,24 @@
+import { useState } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+
+    const [showNav, setShowNav] = useState(false)
+    
+    const handleNavClick = () => {
+        
+        if (showNav) {
+            setShowNav(false)
+
+        } else {
+            setShowNav(true)
+        }
+    }
+ 
     return (
         <>
+            
             <Navbar className='mt-3'>
             
                 <Link to="/" className='navbar-brand'>MW Solutions</Link>
@@ -12,6 +27,18 @@ const Header = () => {
                     <Link className='nav-link' to="/projects">Portfolio</Link>
                     <Link className='nav-link' to="/contact">Contact</Link>
                 </Nav>
+
+                <div className={showNav ? `hamburger opened` : 'hamburger'}
+                 onClick={handleNavClick}>
+                    <div></div>
+                    <ul className="hamburger-nav">
+                        <div>
+                            <Link className='nav-link' to="/about">About</Link>
+                            <Link className='nav-link' to="/projects">Portfolio</Link>
+                            <Link className='nav-link' to="/contact">Contact</Link>
+                        </div>
+                    </ul>
+                </div>
             
             </Navbar>
 
