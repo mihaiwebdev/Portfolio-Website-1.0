@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAward, faMedal } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 import SkillsCarousel from '../Components/SkillsCarousel';
+import UpArrow from '../Components/UpArrow'
 
 
 const AbouScreen = () => {
@@ -142,6 +143,8 @@ const AbouScreen = () => {
             </div>
 
             <SkillsCarousel />
+
+            <UpArrow/>
         </>
     )
 }

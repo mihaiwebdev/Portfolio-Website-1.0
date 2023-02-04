@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import UpArrow from '../Components/UpArrow'
 
 const Projects = () => {
 
@@ -80,6 +81,8 @@ const Projects = () => {
                     </p>
                 </Link>
             </div>
+
+            <UpArrow/>
 
         </>
     )

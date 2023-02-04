@@ -6,7 +6,7 @@ const Header = () => {
 
     const [showNav, setShowNav] = useState(false)
     
-    const handleNavClick = () => {
+    const toggleNavbar = () => {
         
         if (showNav) {
             setShowNav(false)
@@ -15,11 +15,11 @@ const Header = () => {
             setShowNav(true)
         }
     }
- 
+
     return (
         <>
             
-            <Navbar className='mt-3'>
+            <Navbar id='navbar' className='mt-3'>
             
                 <Link to="/" className='navbar-brand'>MW Solutions</Link>
                 <Nav className="ms-auto">
@@ -29,7 +29,7 @@ const Header = () => {
                 </Nav>
 
                 <div className={showNav ? `hamburger opened` : 'hamburger'}
-                 onClick={handleNavClick}>
+                 onClick={toggleNavbar}>
                     <div></div>
                     <ul className="hamburger-nav">
                         <div>
