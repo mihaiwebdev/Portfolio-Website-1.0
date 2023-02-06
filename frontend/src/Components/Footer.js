@@ -40,7 +40,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <button onClick={() => navigate('/contact#contact')}
+                    <button onClick={() => navigate('/contact')}
                     className="btn-white">GET IN TOUCH</button>
                     <svg className="cta-circles" width="876" height="584" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="a"><stop stopColor="#5D0202" stopOpacity="0" offset="0%"/><stop stopColor="#5D0202" stopOpacity=".498" offset="100%"/></linearGradient></defs><g transform="matrix(-1 0 0 1 876 0)" fill="url(#a)" fillRule="evenodd" opacity=".309"><g transform="translate(0 292)"><circle transform="matrix(0 -1 -1 0 292 292)" cx="146" cy="146" r="146"/><circle transform="matrix(-1 0 0 1 876 0)" cx="438" cy="146" r="146"/><circle transform="matrix(0 1 1 0 584 -584)" cx="730" cy="146" r="146"/></g><circle transform="matrix(0 -1 -1 0 292 292)" cx="146" cy="146" r="146"/><circle transform="matrix(-1 0 0 1 876 0)" cx="438" cy="146" r="146"/></g></svg>
                 </motion.div>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className="content-container">
                     <div className='footer-nav'>
                     
-                        <Link to="/" className='navbar-brand'>
+                        <Link to="/#home" className='navbar-brand'>
                             <svg width="200" height="52.231579254623504" viewBox="0 0 398.36875670167217 52.231579254623504" className="css-1j8o68f"><defs id="SvgjsDefs25266"></defs><g id="SvgjsG25267" featurekey="nameLeftFeature-0" transform="matrix(0.9543296641615452,0,0,0.9543296641615452,-1.391123407029063,-1.4211894552266138)" fill="#E7816B">
                                 <motion.path variants={icon} initial="hidden" animate="visible" transition={{default:
                                 { duration: 2, ease: "easeInOut" },fill: { duration: 2, ease: [1, 0, 0.8, 1] }}} className='logo-item'
@@ -79,8 +79,8 @@ const Footer = () => {
                         </Link>
                         <Nav className="ms-auto">
                             <Link className='nav-link' to="/about#about">About</Link>
-                            <Link className='nav-link' to="/projects#projects">Portfolio</Link>
-                            <Link className='nav-link' to="/contact#contact">Contact</Link>
+                            <Link className='nav-link' to="/projects">Portfolio</Link>
+                            <Link className='nav-link' to="/contact">Contact</Link>
                         </Nav>
                 
                     </div>

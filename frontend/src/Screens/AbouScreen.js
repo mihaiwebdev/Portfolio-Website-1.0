@@ -12,9 +12,9 @@ const AbouScreen = () => {
 
     useEffect(() => {
 
-        const section = window.location.hash.substr(1);
+        const section = window.location.hash.substr(8);
         const targetSection = document.getElementById(section);
-    
+        
         if (targetSection) {
           targetSection.scrollIntoView({ behavior: "smooth" });
         }

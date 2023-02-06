@@ -19,16 +19,17 @@ const Projects = () => {
         ['managesm','Landing page website for a business', 'MANAGE',
         'https://mihaiwebdev.github.io/Manage-Landing-Page-/']]
 
-        useEffect(() => {
+    useEffect(() => {
 
-            const section = window.location.hash.substr(1);
-            const targetSection = document.getElementById(section);
+        const section = window.location.hash.substr(2);
+        const targetSection = document.getElementById(section);
         
-            if (targetSection) {
-              targetSection.scrollIntoView({ behavior: "smooth" });
-            }
-    
-          }, []);
+        console.log(section)
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+
+        }, []);
 
 
     return (

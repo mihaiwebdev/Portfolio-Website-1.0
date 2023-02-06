@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Ilustrations from '../Components/Ilustrations'
 import { motion } from 'framer-motion'
 import { useNavigate, Link } from 'react-router-dom'
@@ -5,11 +6,22 @@ import UpArrow from '../Components/UpArrow'
 
 const HomeScreen = () => {
 
+    useEffect(() => {
+
+        const section = window.location.hash.substr(3);
+        const targetSection = document.getElementById(section);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+
+      }, []);
+
     const navigate =  useNavigate()
 
     return (
         <>  
-            <header className='hero-home'>
+            <header id='home' className='hero-home'>
                 <h1 className='heading-h1'>
                     Elevate Your Business with a Stunning Custom Website
                 </h1>
