@@ -61,7 +61,7 @@ const Projects = () => {
                 {projectImages.map((proj, idx) => (
 
                     <motion.div key={idx}
-                     initial={{opacit: 0, y:80, scale: 0.6}}
+                     initial={{opacity: 0, y:80, scale: 0.6}}
                      whileInView={{opacity: 1, y:0, scale: 1}}
                      transition={{duration: 0.5}}
                     >

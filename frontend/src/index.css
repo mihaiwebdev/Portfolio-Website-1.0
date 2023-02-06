@@ -141,6 +141,14 @@ button {
 
 
 /* Header */
+
+.logo-item {
+  overflow: visible;
+  stroke: rgb(231, 129, 107);
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
 .navbar {
   position: relative;
   padding-top: 1rem !important;
@@ -177,7 +185,6 @@ button {
   width: 30px;
   display: none;
   margin-left: auto;
-  
 }
 
 .hamburger>div{
@@ -1335,6 +1342,7 @@ button {
  .footer-nav .nav .nav-link {
   padding-left: 0px !important;
   margin: 5px 0;
+  margin-left: 0 !important;
  }
 
  .footer-info {
