@@ -1,3 +1,4 @@
+const path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv').config()
@@ -17,7 +18,7 @@ const transporter = nodemailer.createTransport({
 app.use(express.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.post('/contact', (req, res) => {
+app.post('/contactme', (req, res) => {
     const name = req.body.name
     const email = req.body.email
     const message = req.body.text
@@ -42,6 +43,14 @@ app.post('/contact', (req, res) => {
     })
 
 })
+
+if (process.env.NODE_ENV === 'production') {
+
+    app.use(express.static(path.join(__dirname, '../frontend/build')))
+
+    app.get('*', (req, res) => res.sendFile(__dirname, '../', 'frontend', 'build', 'index.html'))
+
+}
 
 
 app.listen(port, () => {

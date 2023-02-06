@@ -42,7 +42,7 @@ const Contact = () => {
                     'text': text
                 }
     
-                const { data } = await axios.post('/contact',formData, config)
+                const { data } = await axios.post('/contactme',formData, config)
     
                 setName('')
                 setEmail('')
