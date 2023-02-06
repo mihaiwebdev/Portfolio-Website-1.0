@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.24262504.css",
-    "main.js": "/static/js/main.19af62a3.js",
+    "main.css": "/static/css/main.ae4e9bfa.css",
+    "main.js": "/static/js/main.2d8fabc0.js",
     "static/js/787.749b4a44.chunk.js": "/static/js/787.749b4a44.chunk.js",
     "static/media/pexels-polina-zimmerman-3782134.jpg": "/static/media/pexels-polina-zimmerman-3782134.c299cd108e17ce8d0978.jpg",
     "static/media/postgres.jpg": "/static/media/postgres.5a13e254fb0c5ae14652.jpg",
@@ -33,12 +33,12 @@
     "static/media/illustration-passionate.png": "/static/media/illustration-passionate.1f8148e54500a8c9d4e4.png",
     "static/media/sassgood.png": "/static/media/sassgood.632ed752948b85214bfd.png",
     "index.html": "/index.html",
-    "main.24262504.css.map": "/static/css/main.24262504.css.map",
-    "main.19af62a3.js.map": "/static/js/main.19af62a3.js.map",
+    "main.ae4e9bfa.css.map": "/static/css/main.ae4e9bfa.css.map",
+    "main.2d8fabc0.js.map": "/static/js/main.2d8fabc0.js.map",
     "787.749b4a44.chunk.js.map": "/static/js/787.749b4a44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.24262504.css",
-    "static/js/main.19af62a3.js"
+    "static/css/main.ae4e9bfa.css",
+    "static/js/main.2d8fabc0.js"
   ]
 }
