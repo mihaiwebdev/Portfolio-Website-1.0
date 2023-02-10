@@ -26,7 +26,7 @@ const Services = () => {
          'description': ' I will ensure that your website is optimized for search engines, helping you to improve your search engine rankings and reach more potential customers.',
          'png': 'seo'    
         },
-        {'name': ' Setting up Custom Domain and Website Hosting',
+        {'name': 'Custom Domain and Website Hosting',
          'description': 'I will set up a custom domain name for your website url so the users can access it more easly, and also hosting it online so everyone can navigate it',
          'png': 'Domain-registration'    
         },
@@ -73,8 +73,8 @@ const Services = () => {
                 {serviceInfo.map((service, index) => (
 
                     
-                    <motion.div key={index} initial={index % 2 === 0 ? {opacity: 0, x:-400} 
-                        : {opacity: 0, x: 400}}
+                    <motion.div key={index} initial={index % 2 === 0 ? {opacity: 0, x:-270} 
+                        : {opacity: 0, x: 270}}
                      whileInView={{opacity:1, x:0}}
                      transition={{
                         type: "spring",
@@ -89,7 +89,7 @@ const Services = () => {
                             <p className='p-font'>{service.description}</p>
                         </div>
 
-                        <img width={500} src={require(`../assets/services/${service.png}.png`)} alt="" />
+                        <img className='service-img' width={500} src={require(`../assets/services/${service.png}.png`)} alt="" />
                         
                     </motion.div>
 

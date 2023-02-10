@@ -1133,6 +1133,10 @@ button {
     max-width: 350px;
   }
 
+  .service-box img {
+    width: 350px !important;
+  }
+
   .contact-text {
     max-width: 350px !important;
     margin-right: 10px;
@@ -1278,6 +1282,16 @@ button {
 
   .projects-other {
     margin-top: 90px;
+  }
+
+  .service-box h2 {
+    font-size: 22px;
+  }
+  .service-box p {
+    font-size: 15px;
+  }
+  .service-box img {
+    width: 300px !important;
   }
 }
 
@@ -1559,6 +1573,25 @@ button {
   margin-top: 240px;
  }
 
+ .service-box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+ .service-box.reverse {
+  flex-direction: column;
+  margin: 40px 0;
+ }
+
+ .service-box>div {
+  margin-left: 0;
+ }
+
+ .service-box img {
+  width: 300px !important;
+ }
 
  .contact {
   height: 764px;
