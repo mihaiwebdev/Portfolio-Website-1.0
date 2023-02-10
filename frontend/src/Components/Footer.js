@@ -46,8 +46,9 @@ const Footer = () => {
                         </Link>
                         <Nav className="ms-auto">
                             <Link className='nav-link' to="/about#about">About</Link>
-                            <Link className='nav-link' to="/projects">Portfolio</Link>
-                            <Link className='nav-link' to="/contact">Contact</Link>
+                            <Link className='nav-link' to="/projects#projects">Portfolio</Link>
+                            <Link className='nav-link' to="/services#services">Services</Link>
+                            <Link className='nav-link' to="/contact#contact">Contact</Link>
                         </Nav>
                 
                     </div>

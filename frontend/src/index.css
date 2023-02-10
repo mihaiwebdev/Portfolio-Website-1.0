@@ -455,15 +455,16 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   
 }
 
 .home-certificates {
-  background: url('./assets/home/desktop/certificates-grayscale.jpg') no-repeat center center /cover;
+  background: url('./assets/home/desktop/Website-builder-grayscale.png') no-repeat center 10% /cover;
   height: 308px;
   width: 100%;
+  background-color:var(--dark-grey);
 
 }
 
@@ -683,6 +684,7 @@ button {
   border-radius: 15px;
   margin-top: 130px;
   position: relative;
+  overflow: hidden;
 }
 
 .about-card svg {
@@ -806,6 +808,55 @@ button {
 .about-card.second svg {
   left: 0;
 }
+
+
+/* Serices */
+
+.services {
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.services-leaf {
+  top: 300px !important;
+}
+
+.services-leaf-bottom {
+  top: 2500px !important;
+}
+
+.service-box {
+  border-radius: 15px;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  justify-content: space-around;
+}
+
+.service-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-box svg {
+  font-size: 38px;
+  margin: auto 0;
+  color: var(--peach);
+}
+
+.service-box>div {
+  margin: auto 0;
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.service-box h2 {
+  font-size: 30px;
+  color: var(--black);
+  margin-bottom: 10px;
+  line-height: 34px;
+}
+
 
 
 /* Contact Page */

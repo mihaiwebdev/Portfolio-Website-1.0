@@ -21,10 +21,10 @@ const Projects = () => {
 
     useEffect(() => {
 
-        const section = window.location.hash.substr(2);
+        const section = window.location.hash.substr(11);
         const targetSection = document.getElementById(section);
         
-        console.log(section)
+
         if (targetSection) {
             targetSection.scrollIntoView({ behavior: "smooth" });
         }

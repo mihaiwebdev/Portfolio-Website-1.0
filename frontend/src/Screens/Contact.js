@@ -14,12 +14,11 @@ const Contact = () => {
 
     useEffect(() => {
 
-        const section = window.location.hash.substr(2);
+        const section = window.location.hash.substr(10);
         const targetSection = document.getElementById(section);
         
-        
         if (targetSection) {
-          targetSection.scrollIntoView({ behavior: "smooth" });
+            targetSection.scrollIntoView({ behavior: "smooth" });
         }
 
       }, []);

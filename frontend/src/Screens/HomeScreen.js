@@ -72,9 +72,9 @@ const HomeScreen = () => {
                  }}
                  className='section-1-card home-certificates'
                 >
-                    <Link to='/about#certificates'>
-                        <h2 className='heading-h2'>CERTIFICATES</h2>
-                        <p>VIEW CERTIFICATES
+                    <Link to='/services#services'>
+                        <h2 className='heading-h2'>SERVICES</h2>
+                        <p>VIEW SERVICES
                             <svg className='ms-3' width="7" height="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l4 4-4 4" stroke="#E7816B" strokeWidth="2" fill="none" fillRule="evenodd"/></svg>
                         </p>
                     </Link>
