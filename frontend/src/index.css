@@ -241,6 +241,7 @@ button {
   z-index: 10;
   transform: scale(0);
   transition: transform 0.3s ease-in, opacity 0.4s ease-in-out;
+  border-radius: 0 0 15px 15px;
 }
 
 .hamburger-nav .nav-links {
@@ -249,7 +250,7 @@ button {
   background-color: var(--black);
   transform: translateX(-32px);
   width: 100vw;
-  height: 255px;
+  height: 305px;
   transition: all 0.3s ease ;
 }
 
@@ -296,8 +297,14 @@ button {
   transform: translateY(0);
 }
 
-.hamburger.opened .nav-link:last-of-type {
+.hamburger.opened .nav-link:nth-of-type(3) {
   transition: all 0.3s 0.4s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hamburger.opened .nav-link:last-of-type {
+  transition: all 0.3s 0.5s ease;
   opacity: 1;
   transform: translateY(0);
 }
@@ -1317,6 +1324,10 @@ button {
 
   .navbar-brand svg {
     width: 120px;
+  }
+
+  .navbar-brand svg g rect:last-of-type {
+    display: none !important;
   }
 
  .hero-home {
