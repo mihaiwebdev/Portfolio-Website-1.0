@@ -145,6 +145,7 @@ button {
 .logo-item {
   overflow: visible;
   stroke: rgb(231, 129, 107);
+  stroke-width: 0.5;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
@@ -1323,7 +1324,8 @@ button {
   }
 
   .navbar-brand svg {
-    width: 120px;
+    width: 180px;
+    height: 65px;
   }
 
   .navbar-brand svg g rect:last-of-type {
